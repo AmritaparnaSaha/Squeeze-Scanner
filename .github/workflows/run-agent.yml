@@ -2,8 +2,8 @@ name: Run Short Squeeze Agent
 
 on:
   schedule:
-    # Runs automatically at 18:00 UTC (2:00 PM EST) Monday through Friday
-    - cron: '0 18 * * 1-5'
+    # Runs every 10 minutes between 13:30 UTC and 20:00 UTC (9:30 AM - 4:00 PM EST), Mon-Fri
+    - cron: '*/10 13-20 * * 1-5'
   workflow_dispatch:
 
 jobs:
